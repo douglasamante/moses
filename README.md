@@ -1,5 +1,5 @@
 
-MOSES -- Meta-Optimizing Semantic Evolutionary Search to FakeNews CLassification
+MOSES -- Meta-Optimizing Semantic Evolutionary Search to FakeNews Classification
 =====================================================
 
 [![CircleCI](https://img.shields.io/circleci/project/github/singnet/moses/master.svg)](https://circleci.com/gh/singnet/moses/tree/master)
