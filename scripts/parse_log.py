@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+#Update by Douglas Amante 
+#Date: 06.01.2021
+
 import sys
 from common import datetime_from_str
 from optparse import OptionParser
@@ -44,10 +48,11 @@ def parse_log(logFileName, options):
                 of.write(",".join(content) + "\n")
 
 if __name__ == "__main__":
+
     # define options
     usage = "usage: %prog MOSES_LOG [options]\n" + \
-        "Parse a log file MOSES_LOG and outputs a CSV file" + \
-        " describing the learning performance."
+        "Parse a log file MOSES_LOG and outputs a Snope Dataset" + \
+        " You must increment the Snopes.csv here" 
     parser = OptionParser(usage)
     #parse options
     parser.add_option("-p", "--prefix", default="Demes",
