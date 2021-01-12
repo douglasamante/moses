@@ -1,5 +1,5 @@
 
-MOSES -- Meta-Optimizing Semantic Evolutionary Search
+MOSES -- Meta-Optimizing Semantic Evolutionary Search to FakeNews CLassification
 =====================================================
 
 [![CircleCI](https://img.shields.io/circleci/project/github/singnet/moses/master.svg)](https://circleci.com/gh/singnet/moses/tree/master)
@@ -28,10 +28,7 @@ by selecting one exemplar tree from a collection of reasonably fit
 individuals, and then making random alterations to the program tree,
 in an attempt to find an even fitter (more accurate) program.
 
-It is derived from the ideas forumlated in Moshe Looks' thesis,
-"Competent Program Evolution", 2006 (Washington University, Missouri)
-http://metacog.org/main.pdf.  Moshe is also one of the primary authors
-of this code.
+The purpose is use this machine learning tool to optimize the convolutional neural network implementation, this implementation is showed in this way(moses/moses/main/implementation). However, this implementation do not have utilizing MOSES.
 
 
 LICENSE
@@ -53,6 +50,9 @@ Prerequisites
 To build and run MOSES, the packages listed below are required. With a
 few exceptions, most Linux distributions will provide these packages.
 
+###### Dasets
+> Snopes
+> Glovo.6b
 ###### boost
 > C++ utilities package
 > http://www.boost.org/ | libboost-dev
@@ -100,7 +100,7 @@ structure of the source directory root. The flag
 results in binaries that are optimized for for performance; ommitting
 this flag will result in faster builds, but slower executables.
 
-Unit tests
+Unit tests to Fake News Classification
 ----------
 To build and run the unit tests, from the ./build directory enter (after
 building moses as above):
@@ -112,18 +112,6 @@ INSTALLATION
 ------------
 Just say `sudo make install`  after finishing the build.
 
+After these steps, you get use MOSES to aggregate about optimization the convolution neural network. 
 
-EXAMPLES DIRECTORY
-------------------
-MOSES can be used in one of two ways: either directly from the command
-line, or by embedding its low-level API into C++ programs. For almost
-all users, the command-line interface is strongly recommended.
 
-For those who absolutely must used the low-level C++ programming API,
-there is the `/examples` directory.  To build the examples, say:
-```
-    make examples
-```
-* example-ant: Santa Fe Trail ant example
-* example-data: Simple data sets on which moses can be run.
-* example-progs: Other example programs.
